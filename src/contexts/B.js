@@ -23,7 +23,7 @@ class A extends Component {
       >
         B
         <StateContext.Consumer>
-          {(context) => <h2>Name: {context.name}</h2>}
+          {(context) => <h2>Name: {context.state.name}</h2>}
         </StateContext.Consumer>
         {this.props.children}
       </div>

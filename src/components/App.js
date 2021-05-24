@@ -39,7 +39,7 @@ class App extends Component {
               console.log(context);
               return (
                 <>
-                  <h1>Name: {context.name}</h1>
+                  <h1>Name: {context.state.name}</h1>
                   <A></A>
                   <br />
                   <B></B>

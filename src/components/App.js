@@ -39,6 +39,11 @@ class App extends Component {
               console.log(context);
               return (
                 <>
+                  <input
+                    type="text"
+                    value={context.state.name}
+                    onChange={(e) => context.handleChange(e)}
+                  />
                   <h1>Name: {context.state.name}</h1>
                   <A></A>
                   <br />

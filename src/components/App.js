@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import UserCreate from "./UserCreate";
 import LanguageContext from "../contexts/LanguageContext";
 import ColorContext from "../contexts/ColorContext";
-import { GlobalStateProvider, StateContext } from "../contexts/ClassProvider";
+//import { GlobalStateProvider, StateContext } from "../contexts/ClassProvider";
+import {
+  GlobalStateProvider,
+  StateContext,
+} from "../contexts/FunctionalProvider";
 import A from "../contexts/A";
 import B from "../contexts/B";
 

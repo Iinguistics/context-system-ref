@@ -7,9 +7,9 @@ import {
   GlobalStateProvider,
   StateContext,
 } from "../contexts/FunctionalProvider";
-import A from "../contexts/A";
-import B from "../contexts/B";
-
+import A from "./A";
+import B from "./B";
+import C from "./C";
 class App extends Component {
   state = { language: "english" };
 
@@ -52,6 +52,8 @@ class App extends Component {
                   <A></A>
                   <br />
                   <B></B>
+                  <br />
+                  <C></C>
                 </>
               );
             }}

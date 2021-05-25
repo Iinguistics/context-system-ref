@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 //import { StateContext } from "./ClassProvider";
-import { StateContext } from "./FunctionalProvider";
+import { StateContext } from "../contexts/FunctionalProvider";
 
-class A extends Component {
+class B extends Component {
   constructor(props) {
     super(props);
   }
@@ -17,12 +17,12 @@ class A extends Component {
           width: "100%",
           minHeight: "100px",
           flexDirection: "column",
-          background: "black",
+          background: "#333",
           color: "white",
           fontSize: "1.2rem",
         }}
       >
-        A
+        B
         <StateContext.Consumer>
           {(context) => <h2>Name: {context.state.name}</h2>}
         </StateContext.Consumer>
@@ -32,4 +32,4 @@ class A extends Component {
   }
 }
 
-export default A;
+export default B;

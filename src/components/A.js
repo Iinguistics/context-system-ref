@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 //import { StateContext } from "./ClassProvider";
-import { StateContext } from "./FunctionalProvider";
+import { StateContext } from "../contexts/FunctionalProvider";
 
 class A extends Component {
   constructor(props) {
@@ -17,14 +17,18 @@ class A extends Component {
           width: "100%",
           minHeight: "100px",
           flexDirection: "column",
-          background: "#333",
+          background: "black",
           color: "white",
           fontSize: "1.2rem",
         }}
       >
-        B
+        A
         <StateContext.Consumer>
-          {(context) => <h2>Name: {context.state.name}</h2>}
+          {(context) => (
+            <>
+              <h2>Name: {context.state.name}</h2>
+            </>
+          )}
         </StateContext.Consumer>
         {this.props.children}
       </div>
